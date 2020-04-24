@@ -1,0 +1,59 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>A LOT TO SAY</title>
+	<style> 
+		body {background-image: url("bg test-3-01.png"); background-repeat: repeat-y; background-size: cover;}
+		
+		video{width: 300px; height 300px; padding: 10px; justify-self: center;}
+		
+		.videos {max-width: 1200px; margin: auto; display: grid; justify-content: center; grid-gap: 1rem; }
+		
+		@media (min-width: 620px) {.videos { grid-template-columns: repeat(2, 1fr); margin: auto; justify-content: center;} }
+			
+		@media (min-width: 930px) {.videos { grid-template-columns: repeat(3, 1fr); margin: auto; justify-content: center;} }
+		
+		@media (min-width: 1050px) {.videos {grid-template-columns: repeat(3, 1fr); margin: auto; justify-content: center;} video{width: 360px; height: 360px; padding: 10px; justify-self: center;}}
+		
+	</style>
+	
+	<script src=
+"http://ajax.googleapis.com/ajax/
+libs/jquery/1.11.2/jquery.min.js">
+</script>
+	
+	<script>
+	$(document).ready(function(){
+		$("video").click(function () {
+    	$(this).prop("muted", !$(this).prop("muted"));
+	});
+	});	
+	</script>
+	
+</head>
+
+<body>
+		<div class="videos">
+		<video src="Texts/research says-2/21JUNE2017.mp4" alt="21 JUNE 2017" autoplay loop muted></video>
+			
+		<video src="Texts/up my throat/19MAY2019.mp4" alt="19 MAY 2019" autoplay loop muted></video>
+		
+		<video src="Texts/word vomit/Animations!/9AUGUST2017.mp4" alt="9 AUGUST 2017" autoplay loop muted></video>
+		
+		<video src="Texts/youthinkyoumatter/Animations!/youthinkyoumatter-1.mp4" alt="datehere" autoplay loop muted></video>
+			
+	 	<video src="Texts/macncheese/Animations!/macncheese-1.mp4" alt="19 FEBRUARY 2018" autoplay loop muted></video>	
+			
+		<video src ="Texts/this is a lie-2/Animations!/17MAY2017.mp4" alt="17 MAY 2017" autoplay loop muted></video>
+		
+		<video src="Texts/shooting stars/Animations!-2/shootingstars-calm-3.mp4" alt="31 MAY 2019" autoplay loop muted></video>
+		
+		<video src="Texts/etrangere/etrangere-1.mp4" alt="datehere" autoplay loop muted></video>
+			
+	</div>
+	
+	</body>
+	
+	
+</html>
